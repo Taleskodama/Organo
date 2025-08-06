@@ -1,0 +1,22 @@
+.rodape {
+  background-color: #6278f7;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 75px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.rodape ul li {
+  display: inline-block;
+  margin-right: 32px;
+}
+
+footer ul li:last-child {
+  margin-right: 0;
+}
+
+.rodape p {
+  font-size: 20px;
+}
