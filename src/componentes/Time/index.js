@@ -2,7 +2,7 @@ import Colaborador from "../Colaborador";
 import "./Time.css";
 
 const Time = (props) => {
-  return (
+  return props.colaboradores.length > 0 ? (
     <section
       className="time"
       style={{
@@ -20,6 +20,8 @@ const Time = (props) => {
         ))}
       </div>
     </section>
+  ) : (
+    ""
   );
 };
 
