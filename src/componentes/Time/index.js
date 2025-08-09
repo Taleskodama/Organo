@@ -6,10 +6,10 @@ const Time = ({
   id,
   nome,
   cor,
-  corSecundaria,
   colaboradores,
   aoDeletar,
   mudarCor,
+  aoFavoritar,
 }) => {
   return colaboradores.length > 0 ? (
     <section
@@ -30,12 +30,15 @@ const Time = ({
         {colaboradores.map((colaborador) => {
           return (
             <Colaborador
+              aoFavoritar={aoFavoritar}
+              id={colaborador.id}
               corDeFundo={cor}
               key={colaborador.nome}
               nome={colaborador.nome}
               cargo={colaborador.cargo}
               imagem={colaborador.imagem}
               aoDeletar={aoDeletar}
+              favorito={colaborador.favorito}
             />
           );
         })}
